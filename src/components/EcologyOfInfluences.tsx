@@ -22,7 +22,7 @@ export const EcologyOfInfluences: React.FC = () => {
         <div className="relative w-full max-w-3xl rounded-3xl bg-white border border-[#E8EDF2] p-2 sm:p-6 shadow-warm">
           <div className="relative w-full aspect-square overflow-hidden rounded-2xl bg-white">
             <img
-              src="/ecology-of-influences.png"
+              src="./ecology-of-influences.png"
               alt="Ecology of Influences artwork"
               className="w-full h-full object-contain block select-none pointer-events-none"
             />
