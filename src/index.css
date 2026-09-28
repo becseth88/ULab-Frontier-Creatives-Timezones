@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: 'Fraunces', Georgia, serif;
+  --font-sans: 'Alegreya Sans', sans-serif;
+  --color-paper: #FCFCFD;
+  --color-navy: #192943;
+  --color-navy-deep: #0F1A2C;
+  --color-navy-slate: #3B4E6A;
+  --color-navy-muted: #627289;
+  --color-navy-subtle: #8C9DB5;
+  --color-border-subtle: #E8EDF2;
+  --color-border-card: #EDF1F5;
+  --color-coral: #FF6B6B;
+  --color-aqua: #4ECDC4;
+  --color-violet: #A78BFA;
+  --color-yellow: #FFE66D;
+  --color-gold: #F4BD3C;
+  --color-gold-light: #FDF6E3;
+  --color-gold-border: #F8DC89;
+  --shadow-warm: 0 4px 20px -2px rgba(25, 41, 67, 0.05), 0 2px 6px -1px rgba(25, 41, 67, 0.02);
+  --shadow-warm-lg: 0 12px 30px -4px rgba(25, 41, 67, 0.08), 0 4px 10px -2px rgba(25, 41, 67, 0.03);
+}
+
+.tz-cell-night {
+  background-color: #8da4c4;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.35);
+}
+.tz-cell-day {
+  background-color: #ebf3fa;
+  color: #192943;
+  border-right: 1px solid #dce7f2;
+}
+.tz-cell-evening {
+  background-color: #dbe7f5;
+  color: #192943;
+  border-right: 1px solid rgba(255, 255, 255, 0.6);
+}
+.tz-cell-date-boundary {
+  background-color: #6c88aa;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+#tz-sync-cursor {
+  pointer-events: none;
+  transition: left 120ms cubic-bezier(0.2, 0, 0, 1);
+  box-shadow: 0 4px 14px rgba(25, 41, 67, 0.16);
+  background-color: rgba(78, 205, 196, 0.18);
+  border: 2px solid #192943;
+  border-radius: 8px;
+}
+
+/* Custom range slider styling for touch and mobile */
+input[type='range'].tz-range-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #dbe4ee;
+  border-radius: 9999px;
+  height: 10px;
+  outline: none;
+}
+input[type='range'].tz-range-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #192943;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(25, 41, 67, 0.35);
+  border: 2.5px solid #ffffff;
+  transition: transform 0.1s ease;
+}
+input[type='range'].tz-range-slider::-webkit-slider-thumb:active {
+  transform: scale(1.15);
+  background: #0F1A2C;
+}
+input[type='range'].tz-range-slider::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #192943;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(25, 41, 67, 0.35);
+  border: 2.5px solid #ffffff;
+}
+
+/* Confetti background animation */
+@keyframes confetti-sway {
+  0%, 100% {
+    transform: translateY(0px) rotate(var(--rot, 0deg));
+  }
+  50% {
+    transform: translateY(-5px) rotate(calc(var(--rot, 0deg) + 7deg)) scale(1.04);
+  }
+}
+
+.animate-confetti {
+  animation: confetti-sway 3.2s ease-in-out infinite;
+}
+
+
