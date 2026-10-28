@@ -163,7 +163,7 @@ export const INFLUENCES: InfluenceHotspot[] = [
     name: "Samara's Sanctuary Studios",
     subtitle: 'Genesis Design Challenge',
     description: 'S³ is a regenerative learning venture studio building companies that hold Purpose, People, Profit, and Planet together. We cofound with emerging, digitally native, mission-driven learning and social-innovation institutions.',
-    url: 'https://samarastartupshaman.substack.com/',
+    url: 'https://samarasanctuary.studio',
     left: '59%',
     top: '66%',
     width: '7.5%',
